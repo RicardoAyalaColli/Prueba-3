@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/*Propiedades menú oculto*/
+.menu{
+    display: none;
+    
+    background-color: #722110;
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.menu span{
+    padding: 10px;
+}
+
+/*Propiedades del div despleMenu oculto*/
+.despleMenu{
+    position: absolute;
+    top: 70px; left: 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: #722110;
+    padding: 16px;
+    border-radius: 5px;  
+    width: 145px;
+    margin-top: -100%;
+}
+
+/*Propiedades de la cabecera*/
+header{
+    display: flex;
+    height: 70px;
+    background-color: #ebf0f3;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+/*Tamaño y alineacion de logo y nombre*/
+.logo{
+    display: flex;
+    align-items: center;    
+}
+.logo img{
+    height: 50px;
+    padding: 5px;
+}
+
+/*Color de los links*/
+a{
+    text-decoration: none;
+    color: black;    
+}
+
+/*Propiedades del botón Usuario*/
+#btnUser{
+    background-color: #722110;
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/*Propiedades flecha abajo botón usuario*/
+.flechaAbajo{
+    height: 13px;
+    padding: 0px 5px 0 5px;
+}
+
+
+/*Propiedades del div despleUsuario(menú oculto)*/
+.despleUsuario{
+    position: absolute;
+    background-color: #722110;
+    padding: 16px;
+    border-radius: 5px;  
+    width: 145px;
+    margin-top: -100%;
+}
+
+/*Propiedades del menú usuario con ícono*/
+.iconUser{
+    display: none;
+    
+    background-color: #722110;
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.iconMenuUser{
+    position: absolute;
+    top: 70px; right: 16px;
+    background-color: #722110;
+    padding: 16px;
+    border-radius: 5px;  
+    margin-top: -100%;
+}
+
+
+/*Propiedades de la barra de navegación*/
+.menuPrincipal{
+    display: flex;
+    height: 0px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+    background-color: #722110;
+    
+}
+
+.menuPrincipal a{
+    color: white;
+    padding: 23px;
+}
+
+.menuPrincipal a:hover{
+    background-color: #fab819;
+    padding: 23px;
+}
+
+/*.despleUsuario a{
+    
+    color: black; 
+    display: none;
+}*/
+
+/*Clase creada en JS para mostrar menuUser*/
+.mostrar{
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .logo{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+
+    .usuario{
+        display: none;
+    }
+    .iconUser{
+        display: block;
+    }
+
+    .menuPrincipal{
+        display: none;
+    }
+   
+
+
+}
+
+/*COLORES JIJIJIJA
+
+Marrón 			#722110
+Amarillo 		#fab819
+Gris 1			#7a7f83
+Gris 2			#ebf0f3
+
+*/
