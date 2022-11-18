@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
+    <header id="cabecera">
         <div class="menu">
             <i class="fa-solid fa-bars" id="btnMenu"></i>
             <div class="despleMenu" id="mostrarMenu">
-                <a href="#">Inicio</a>
-                <a href="#">Vendedores</a>
-                <a href="#">Productos</a>
-                <a href="#">Ventas</a>
-                <a href="#">Comisiones</a>
+                <a href="../html/inicio.html" target="cambiarmenu">Inicio</a>
+                <a href="../html/vendedores.html" target="cambiarmenu">Vendedores</a>
+                <a href="../html/productos.html" target="cambiarmenu">Productos</a>
+                <a href="../html/ventas.html" target="cambiarmenu">Ventas</a>
+                <a href="../html/comisiones.html" target="cambiarmenu">Comisiones</a>
             </div>
         </div>
 
@@ -42,12 +42,15 @@
     </header>
             
     <nav class="menuPrincipal">
-        <a href="#">Inicio</a>
-        <a href="#">Vendedores</a>
-        <a href="#">Productos</a>
-        <a href="#">Ventas</a>
-        <a href="#">Comisiones</a>
+        <a href="../html/inicio.html" target="cambiarmenu">Inicio</a>
+        <a href="../html/vendedores.html" target="cambiarmenu">Vendedores</a>
+        <a href="../html/productos.html" target="cambiarmenu">Productos</a>
+        <a href="../html/ventas.html" target="cambiarmenu">Ventas</a>
+        <a href="../html/comisiones.html" target="cambiarmenu">Comisiones</a>
     </nav>
+    <div class="frame">
+        <iframe name="cambiarmenu" src="../html/inicio.html" scrolling="no" frameborder="0"></iframe>
+    </div>
     
     <script src="../js/admin.js"></script>
 </body>
