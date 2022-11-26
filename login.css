@@ -1,0 +1,126 @@
+/*FONDO*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(imagen.jpg);
+    background-size: 100vw 100vh;
+    /*para la imagen
+    background-size: cover;*/
+    background-attachment: fixed;
+    margin: 0;
+}
+
+
+/*para lo que esta adentro*/
+
+form {
+    width: 700px;
+    margin: auto;
+    background-color: #381b1ba6;
+    padding: 10px 20px;
+    margin-top: 60px;
+    border-radius: 2%;
+}
+
+* {
+    padding: 0;
+    margin: 10;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    padding: 12px;
+    color: rgb(206, 203, 203)
+}
+
+input[type="text"],
+input[type="password"] {
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+
+.input-contenedor {
+    margin-bottom: 15px;
+}
+
+.icon {
+    min-width: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.button {
+    border: none;
+    width: 90%;
+    color: white;
+    font-size: 20px;
+    background: #d4c04d;
+    padding: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: cadetblue;
+}
+
+p {
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    color: #1a2537;
+    font-weight: 600;
+}
+
+.link:hover {
+    color: cadetblue;
+}
+
+.bad {
+    text-align: center;
+    width: 100%;
+    padding: 12px;
+    background-color: #a22;
+    color: #fff
+}
+
+header {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+header h1 {
+    margin-left: 5px;
+    align-items: center;
+    width: calc(20% - 100px);
+    font-family: montez;
+    font-size: 55px;
+}
+
+header a {
+    margin-right: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    transition: all ease 300ms;
+}
+
+
+/*Solo para cuando la pantalla esta grande*/
+
+@media only screen and (max-width: 480px) {
+    form {
+        width: 100%;
+    }
+}
