@@ -1,2 +1,0 @@
-lista de definiciones: se utiliza para mostrar parejas de nombres y valores, 
-como por ejemplo términos y sus definiciones u horas y actos.
