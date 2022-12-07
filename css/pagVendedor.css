@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/*Formato de las etiquetas "<a>"*/
+a{
+    text-decoration: none;
+}
+
+/*Propiedades del header*/
+header{
+    
+    display: flex;
+    height: 70px;
+    background-color: #ebf0f3;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+/*Propiedades del botón menú para moviles*/
+#btnMenuMov{
+    display: none;
+    background-color: #722110;
+    color: white;
+    /*padding: 16px;*/
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/*Propiedades del div despleMenu oculto*/
+.despleMenu{
+    position: absolute;
+    top: 70px; left: 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: #722110;
+    
+    border-radius: 5px;  
+    width: 165px;
+    margin-top: -100%;
+    box-sizing: content-box;
+}
+
+.despleMenu a{
+    color: white;
+    padding: 16px 16px 16px 16px;
+    
+}
+
+.despleMenu a:hover{
+    background-color: #fab819;
+}
+
+/*Propiedades del nómbre y logo*/
+
+#logo{
+   
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#logo img{
+    height: 40px;
+    padding-right: 5px;
+    
+}
+
+/*Propiedades flecha abajo botón*/
+.flechaAbajo{
+    height: 13px;
+    padding: 0px 5px 0 5px;
+}
+
+
+/*Propiedades del carrito de compras*/
+.carrito{
+    background-color: #722110;
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 16px;
+}
+
+
+
+.usuario{
+    display: flex;
+    align-items: center;
+}
+
+/*Propiedades del botón Usuario*/
+#btnUser{
+    background-color: #722110;
+    color: white;
+    /*padding: 16px;*/
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/*Propiedades del botón usuario para móviles*/
+#btnUserMov{
+    display: none;
+    background-color: #722110;
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+/*Propiedades del menú usuario con ícono
+.iconUser{
+    
+    background-color: #722110;
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}*/
+
+/*Propiedades de la barra de navegación y sus links*/
+.menuPrincipal{
+    display: flex;
+    height: 0px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+    background-color: #722110;
+    
+}
+
+.menuPrincipal a{
+    color: white;
+    padding: 23px; /*Ver relacion (1)*/
+}
+
+.menuPrincipal a:hover{
+    background-color: #fab819;
+    padding: 23px;/*Ver relación (1)*/
+}
+
+.datosCarrito{
+    position: absolute;
+    top: 70px; right: 16px;
+    background-color: #722110;
+    padding: 16px;
+    border-radius: 5px; 
+}
+
+
+
+
+/*Propiedades del div despleUsuario(menú oculto) Cerrar sesión*/
+.despleUsuario{
+    position: absolute;
+    top: 70px; right: 16px;
+    background-color: #722110;
+    padding: 16px;
+    border-radius: 5px;  
+    /*margin-top: -100%;*/
+}
+
+.despleUsuario a{
+    color: white;
+}
+
+.despleUsuario:hover{
+    background-color: #fab819;
+}
+
+/*Clase creada en JS para mostrar menuUser*/
+.btnMenuMov{
+    padding: 16px;
+}
+.ocultar{
+    padding: 16px;
+}
+
+.ocultar2{
+    padding: 16px;
+}
+
+.menusito{
+    margin-top: -100%;
+}
+
+.mostrar{
+    margin-top: 0;
+}
+
+.mostrar1{
+    margin-top: 0;
+}
+
+.mostrar2{
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+    #btnUser{
+        display: none;
+    }
+
+    #btnUserMov{
+        display: block;
+    }
+
+    #btnMenuMov{
+        display: block;
+    }
+
+    #logo{
+        display: none;
+    }
+
+    .menuPrincipal{
+        display: none;
+    }
+}
